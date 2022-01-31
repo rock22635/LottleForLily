@@ -265,7 +265,15 @@ function importCsv(){
         csvList.push('Lily刮刮樂中頭獎1000萬!!!')
         csvList.push('Lily獲得一罐Jomalone香水!!!');
         csvList.push('Lily威力彩中頭獎!!!');
-        csvList.push('Lily新年快樂，要每天快樂不要傷心難過~~');
+        csvList.push('Lily新年快樂，要每天快樂不要傷心難過!!!');
+        csvList.push('Lily獲得香奈兒包包!!!');
+        csvList.push('Lily獲得愛馬仕項鍊!!!');
+        csvList.push('Lily很多人愛你疼妳不要難過!!!');
+        csvList.push('Lily不管怎樣都要開心!!!');
+        csvList.push('Lily獲得麥當勞蘋果派!!!');
+        csvList.push('Lily獲得免費的輕井澤!!!');
+        csvList.push('Lily已獲得好運天使祝福!!!');
+
         importState = 1;
         $(".hint-text .text").text("轉蛋機初始化成功");
         $('#import-modal').modal('hide');
