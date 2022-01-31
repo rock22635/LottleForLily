@@ -275,7 +275,7 @@ function importCsv(){
         csvList.push('Lily已獲得好運天使祝福!!!');
 
         importState = 1;
-        $(".hint-text .text").text("轉蛋機初始化成功");
+        $(".hint-text .text").text("轉蛋機初始化成功，請往下拉");
         $('#import-modal').modal('hide');
         $(".import-url").removeClass("warning");
         $(".warning-text").text("");
