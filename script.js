@@ -16,6 +16,8 @@ var importState = 0;
 var gashaponScale_X = 0;
 var gashaponScale_Y = 0;
 
+var playtimes = 0;
+
 // 轉蛋機ID
 var itemId=[
   "#e0dj51prVt431_to","#e0dj51prVt432_to","#e0dj51prVt433_to","#e0dj51prVt434_to",
@@ -221,6 +223,7 @@ function mouseUp(e) {
           gashaponAnimation("drop");
         }, 1.25*1000 );
         $(".hint-text .text").text("顯示結果");
+        playtimes++;
         showModal();
       }
     }
@@ -236,11 +239,15 @@ function mouseUp(e) {
 function showModal(){
     setTimeout(function(){
       $(".modal-body").text(csvList[getRandom(csvList.length-1)]);
+      // if (playtimes == 10) $(".modal-body").text('test');
       $('#result-modal').modal('show');
       $(".result-btn").click(function() {
         $('#result-modal').modal('hide');
         modalState = 0;
         $(".hint-text .text").text("按住螢幕滑動");
+        $(".playtimes").text("遊玩次數:"+playtimes);
+        // $(".btn-import").show();
+        
       });
     }, 3*1000 );
   }

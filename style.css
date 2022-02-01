@@ -3043,6 +3043,18 @@
       padding-bottom: 45px;
     }
   }
+  .playtimes{
+        position: absolute;
+        z-index: 9;
+        font-family:FakePearl-Regular;
+        font-weight: 900;
+        font-size: 2.5rem;
+        color: #8d5b5b;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+
+  }
   .hint-text {
     position: absolute;
     font-weight: 900;
@@ -3169,6 +3181,7 @@
             align-items: center;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    display: none;
   }
   .btn-import:hover, .btn-about:hover {
     background: #633b4b;
