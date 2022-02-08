@@ -18,6 +18,8 @@ var gashaponScale_Y = 0;
 
 var playtimes = 0;
 
+var record=[];
+
 // 轉蛋機ID
 var itemId=[
   "#e0dj51prVt431_to","#e0dj51prVt432_to","#e0dj51prVt433_to","#e0dj51prVt434_to",
@@ -238,7 +240,22 @@ function mouseUp(e) {
 // ------------------------------------------------------------- //
 function showModal(){
     setTimeout(function(){
-      $(".modal-body").text(csvList[getRandom(csvList.length-1)]);
+      var result =csvList[getRandom(csvList.length-1)];
+      var resobj= {
+        index:playtimes,
+        result:result
+      }
+      $(".modal-body").text(result);
+      record.push(resobj);
+
+      var recordtemplate="";
+      record.forEach((result) =>{
+        recordtemplate += `<div class='column'><div>${result.index}.</div><div>${result.result}</div></div>`
+
+      })
+      $('#body-record').html(recordtemplate);
+
+      
       // if (playtimes == 520) $(".modal-body").text('Lily我喜歡你，做我女朋友好嗎? 我喜歡你笑起來很可愛的樣子，也喜歡和你相處聊天時候的感覺，當你難過時我會陪你一起難過，聽到你哭的時候我會非常的不捨甚至會覺得我怎麼這麼沒用，我會陪你笑也陪你哭，當你開心時會陪你一起開心，你的笑容真的很可愛要常常笑不要在哭了!!!');
       $('#result-modal').modal('show');
       $(".result-btn").click(function() {
@@ -246,8 +263,11 @@ function showModal(){
         modalState = 0;
         $(".hint-text .text").text("按住螢幕滑動");
         $(".playtimes").text("遊玩次數:"+playtimes);
-        // $(".btn-import").show();
+        $(".btn-import").css('display','flex');
         
+      });
+      $(".record-btn").click(function() {
+        $('#record-modal').modal('hide');
       });
     }, 3*1000 );
   }

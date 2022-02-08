@@ -2997,6 +2997,28 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+
+ .modal .modal-body-record{
+        width: 100%;
+        display: block;
+        padding: 20px 35px;
+        padding-bottom: 50px;
+        background: #fcf0f0;
+        border-radius: 0 0 10px 10px;
+ }
+ .modal .modal-body-record .column{
+        font-size: 2rem;
+        font-family: FakePearl-Regular;
+        font-weight: 900;
+        width: 100%;
+        font-size: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+ }
+
+
   .modal .modal-dialog .modal-footer-x .modal-footer-btn {
     font-size: 2rem;
     font-family: FakePearl-Regular;
