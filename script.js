@@ -339,7 +339,7 @@ importCsv();
 
 
 function showImportModal(){
-  $("body").click(function() {
+  $("#e0dj51prVt41").click(function() {
     if( csvUrl == undefined){
       $('#import-modal').modal('show');
     }

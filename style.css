@@ -3180,8 +3180,8 @@
   
   .btn-import, .btn-about {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 28px;
+    right: 180px;
     width: 100px;
     height: 50px;
     background: #633b4ba1;
@@ -3260,6 +3260,132 @@
     -webkit-transform-origin: 50% 100% 0;
             transform-origin: 50% 100% 0;
   }
+
+  .function-menu {
+     width: auto;
+     height: auto;
+     position: absolute;
+     top: 0;
+     right: 0;
+     z-index: 100;
+     background: #00000096;
+  }
+
+  .function-menu .menu-box {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .function-menu .menu-box .btn {
+    font-size: 1.9em;
+    height: 50px;
+    font-family: FakePearl-Regular;
+    font-weight: 900;
+    color: #fff !important;
+    z-index: 99;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: 0.5s;
+  }
+  
+  .function-menu .menu-box .btn p {
+    font-weight: 900;          
+    color: #633b4b;
+    padding: 0;
+    margin: 0;
+  }
+  .function-menu .menu-box .btn:hover i {
+    background: #f7524b;
+  }
+  .function-menu .menu-box .btn i{
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    background: #633b4b;
+    border-radius: 50px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .function-menu .open .btn-abouts{
+        webkit-animation-name: fade-in-move; 
+        animation-name: fade-in-move;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+  }
+
+  .function-menu .close .btn-abouts{
+        webkit-animation-name: fade-out-move; 
+        animation-name: fade-out-move;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes fade-in-move {
+        0% {
+          -webkit-transform: translateY(-40px);
+                  transform: translateY(-40px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0px);
+                  transform: translateY(0px);
+          opacity: 1;
+        }
+  }
+  @keyframes fade-in-move {
+        0% {
+          -webkit-transform: translateY(-40px);
+                  transform: translateY(-40px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0px);
+                  transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      @-webkit-keyframes fade-out-move {
+        0% {
+          -webkit-transform: translateY(0px);
+                  transform: translateY(0px);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: translateY(-40px);
+                  transform: translateY(-40px);
+          opacity: 0;
+        }
+      }
+      @keyframes fade-out-move {
+        0% {
+          -webkit-transform: translateY(0px);
+                  transform: translateY(0px);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: translateY(-40px);
+                  transform: translateY(-40px);
+          opacity: 0;
+        }
+      }
   
   @-webkit-keyframes gashaponAnimation {
     0% {
