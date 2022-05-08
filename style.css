@@ -2998,6 +2998,16 @@
             justify-content: space-evenly;
   }
 
+ .modal .modal-body-about{
+        font-family: FakePearl-Regular;
+        font-weight: 900;
+        width: 100%;
+        font-size: 2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+ }
  .modal .modal-body-record{
         width: 100%;
         display: block;
@@ -3007,7 +3017,6 @@
         border-radius: 0 0 10px 10px;
  }
  .modal .modal-body-record .column{
-        font-size: 2rem;
         font-family: FakePearl-Regular;
         font-weight: 900;
         width: 100%;
@@ -3214,6 +3223,23 @@
     right: 20px;
     display: none;
   }
+
+  #about-closed{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #633b4b;
+    right: -25px;
+    border-radius: 50%;
+    top: -25px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
   
   @media screen and (max-width: 992px) {
     .btn-import, .btn-about {
@@ -3279,6 +3305,14 @@
     position: absolute;
     top: 0;
     right: 0;
+  }
+
+  .function-menu .menu-box.close .btn-abouts {
+        pointer-events: none;
+  }
+
+  .function-menu .menu-box.open .btn-abouts {
+        pointer-events: auto;
   }
 
   .function-menu .menu-box .btn {

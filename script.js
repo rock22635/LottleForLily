@@ -256,7 +256,7 @@ function showModal(){
       $('#body-record').html(recordtemplate);
 
       
-      // if (playtimes == 520) $(".modal-body").text('Lily我喜歡你，做我女朋友好嗎? 我喜歡你笑起來很可愛的樣子，也喜歡和你相處聊天時候的感覺，當你難過時我會陪你一起難過，聽到你哭的時候我會非常的不捨甚至會覺得我怎麼這麼沒用，我會陪你笑也陪你哭，當你開心時會陪你一起開心，你的笑容真的很可愛要常常笑不要在哭了!!!');
+      // if (playtimes == 520) $(".modal-body").text('Lily我喜歡你 我喜歡你笑起來很可愛的樣子，也喜歡和你相處聊天時候的感覺，當你難過時我會陪你一起難過，聽到你哭的時候我會非常的不捨甚至會覺得我怎麼這麼沒用，我會陪你笑也陪你哭，當你開心時會陪你一起開心，你的笑容真的很可愛要常常笑不要在哭了!!!');
       $('#result-modal').modal('show');
       $(".result-btn").click(function() {
         $('#result-modal').modal('hide');
@@ -365,4 +365,6 @@ rangeWrapper.addEventListener('mouseup', mouseUp);
 rangeWrapper.addEventListener('mouseleave', mouseUp);
 rangeWrapper.addEventListener('touchend', mouseUp);
 // ----------------
-
+$("#about-closed").click(function() {
+  $('#about-modal').modal('hide');
+});
